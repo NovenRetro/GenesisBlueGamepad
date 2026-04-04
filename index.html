@@ -151,7 +151,56 @@
 .blueretro-logo img:hover {
   transform: scale(1.50);
 }
+ .info-sections {
+        margin: 36px auto 26px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
 
+      .info-card {
+        background: #181818;
+        border: 1px solid #333;
+        border-radius: 12px;
+        padding: 18px 14px;
+        box-shadow: 0 0 14px rgba(0, 170, 255, 0.08);
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 520px;
+      }
+
+      th, td {
+        border: 1px solid #333;
+        padding: 10px 8px;
+        font-size: 0.48em;
+        line-height: 1.6em;
+        vertical-align: top;
+      }
+
+      th {
+        background: #1f1f1f;
+        color: #fbeb04;
+      }
+
+      td {
+        background: #151515;
+        color: #f0f0f0;
+      }
+
+      .section-subtitle {
+        font-size: 0.48em;
+        color: #fb4dd0;
+        margin: 16px 0 10px 0;
+        line-height: 1.7em;
+      }
 
 
       footer {
@@ -193,6 +242,101 @@
           </a>
           <p>Mapeo BlueRetro</p>
         </div>
+      </div>
+
+<div class="info-sections">
+        <section class="info-card">
+          <h5>Atajos y combinaciones</h5>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Acción</th>
+                  <th>Combinación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cambiar entre modo Switch y modo BlueGamepad</td>
+                  <td><span class="combo">START + MODE</span> durante <span class="combo">5 segundos</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="section-subtitle">Atajos en modo Nintendo Switch</div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Función</th>
+                  <th>Combinación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Capture</td>
+                  <td><span class="combo">MODE + LEFT</span></td>
+                </tr>
+                <tr>
+                  <td>Home</td>
+                  <td><span class="combo">START + MODE</span> pulsación corta</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="info-card">
+          <h5>Mapeo de botones</h5>
+
+          <div class="section-subtitle">Modo Bluetooth / BlueRetro</div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Botón físico Sega Genesis</th>
+                  <th>Salida Bluetooth</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Cruceta</td><td>D-Pad</td></tr>
+                <tr><td>A</td><td>X</td></tr>
+                <tr><td>B</td><td>CIRCLE</td></tr>
+                <tr><td>C</td><td>L1</td></tr>
+                <tr><td>X</td><td>SQUARE</td></tr>
+                <tr><td>Y</td><td>TRIANGLE</td></tr>
+                <tr><td>Z</td><td>R1</td></tr>
+                <tr><td>Start</td><td>OPTIONS</td></tr>
+                <tr><td>Mode</td><td>SHARE</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="section-subtitle">Modo Nintendo Switch</div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Botón físico Sega Genesis</th>
+                  <th>Función en Switch</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Cruceta</td><td>D-Pad</td></tr>
+                <tr><td>A</td><td>A</td></tr>
+                <tr><td>B</td><td>B</td></tr>
+                <tr><td>C</td><td>L</td></tr>
+                <tr><td>X</td><td>X</td></tr>
+                <tr><td>Y</td><td>Y</td></tr>
+                <tr><td>Z</td><td>R</td></tr>
+                <tr><td>Start</td><td>+</td></tr>
+                <tr><td>Mode</td><td>-</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
 
       <div class="blueretro-logo">
